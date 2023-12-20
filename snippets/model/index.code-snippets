@@ -1,0 +1,7 @@
+{
+  "Index": {
+    "prefix": ["ns_sequelize_deco_index", "@Index"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "@Index($0)"
+  }
+}

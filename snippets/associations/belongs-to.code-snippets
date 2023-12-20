@@ -1,0 +1,7 @@
+{
+  "BelongsTo": {
+    "prefix": ["ns_sequelize_belongs_to", "@BelongsTo"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "@BelongsTo(() => ${1:Model})"
+  }
+}

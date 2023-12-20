@@ -1,0 +1,12 @@
+{
+  "Sequelize Provider": {
+    "prefix": ["ns_sequelize_provider", "Sequelize Provider"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["import { Sequelize } from 'sequelize-typescript';", "", "export const databaseProviders = [", "  {", "    provide: 'SEQUELIZE',", "    useFactory: async () => {", "      const sequelize = new Sequelize({", "        dialect: '${1:dialect}',", "        host: '${2:host}',", "        port: ${3:port},", "        username: '${4:username}',", "        password: '${5:password}',", "        database: '${6:database}',", "      });", "      sequelize.addModels([$0]);", "      await sequelize.sync();", "      return sequelize;", "    },", "  },", "];", ""]
+  },
+  "Start Sequelize with environment variables": {
+    "prefix": ["ns_sequelize_process_env", "Sequelize environment"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["import { Sequelize } from 'sequelize-typescript';", "", "let config;", "", "switch (process.env.NODE_ENV) {", "  case 'prod':", "  case 'production':", "    config = databaseConfig.production;", "  case 'dev':", "  case 'development':", "    config = databaseConfig.development;", "  case 'test':", "    config = databaseConfig.test;", "  default:", "    config = databaseConfig.development;", "}", "", "const sequelize = new Sequelize(config);", ""]
+  }
+}

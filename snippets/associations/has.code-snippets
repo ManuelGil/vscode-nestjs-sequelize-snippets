@@ -1,0 +1,12 @@
+{
+  "HasMany": {
+    "prefix": ["ns_sequelize_deco_has_many", "@HasMany"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "@HasMany(() => ${1:Model})"
+  },
+  "HasOne": {
+    "prefix": ["ns_sequelize_deco_has_one", "@HasOne"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "@HasOne(() => ${1:Model})"
+  }
+}

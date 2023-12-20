@@ -1,0 +1,12 @@
+{
+  "AutoIncrement": {
+    "prefix": ["ns_sequelize_deco_auto_increment", "@AutoIncrement"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "@AutoIncrement"
+  },
+  "PrimaryKey": {
+    "prefix": ["ns_sequelize_deco_primary_key", "@PrimaryKey"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "@PrimaryKey"
+  }
+}

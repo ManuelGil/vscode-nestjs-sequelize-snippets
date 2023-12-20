@@ -1,0 +1,47 @@
+{
+  "AfterBulkCreate": {
+    "prefix": ["ns_sequelize_deco_after_bulk_create", "@AfterBulkCreate"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterBulkCreate", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterBulkDestroy": {
+    "prefix": ["ns_sequelize_deco_after_bulk_destroy", "@AfterBulkDestroy"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterBulkDestroy", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterBulkUpdate": {
+    "prefix": ["ns_sequelize_deco_after_bulk_update", "@AfterBulkUpdate"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterBulkUpdate", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterCreate": {
+    "prefix": ["ns_sequelize_deco_after_create", "@AfterCreate"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterCreate", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterDestroy": {
+    "prefix": ["ns_sequelize_deco_after_destroy", "@AfterDestroy"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterDestroy", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterSave": {
+    "prefix": ["ns_sequelize_deco_after_save", "@AfterSave"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterSave", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterUpdate": {
+    "prefix": ["ns_sequelize_deco_after_update", "@AfterUpdate"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterUpdate", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterUpsert": {
+    "prefix": ["ns_sequelize_deco_after_upsert", "@AfterUpsert"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterUpsert", "public static $1() {", "\t$0", "}"]
+  },
+  "AfterValidate": {
+    "prefix": ["ns_sequelize_deco_after_validate", "@AfterValidate"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["@AfterValidate", "public static $1() {", "\t$0", "}"]
+  }
+}
