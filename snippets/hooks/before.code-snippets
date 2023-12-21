@@ -1,47 +1,47 @@
 {
   "BeforeBulkCreate": {
     "prefix": ["ns_sequelize_deco_before_bulk_create", "@BeforeBulkCreate"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeBulkCreate", "public static $1() {", "\t$0", "}"]
   },
   "BeforeBulkDestroy": {
     "prefix": ["ns_sequelize_deco_before_bulk_destroy", "@BeforeBulkDestroy"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeBulkDestroy", "public static $1() {", "\t$0", "}"]
   },
   "BeforeBulkUpdate": {
     "prefix": ["ns_sequelize_deco_before_bulk_update", "@BeforeBulkUpdate"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeBulkUpdate", "public static $1() {", "\t$0", "}"]
   },
   "BeforeCreate": {
     "prefix": ["ns_sequelize_deco_before_create", "@BeforeCreate"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeCreate", "public static $1() {", "\t$0", "}"]
   },
   "BeforeDestroy": {
     "prefix": ["ns_sequelize_deco_before_destroy", "@BeforeDestroy"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeDestroy", "public static $1() {", "\t$0", "}"]
   },
   "BeforeSave": {
     "prefix": ["ns_sequelize_deco_before_save", "@BeforeSave"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeSave", "public static $1() {", "\t$0", "}"]
   },
   "BeforeUpdate": {
     "prefix": ["ns_sequelize_deco_before_update", "@BeforeUpdate"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeUpdate", "public static $1() {", "\t$0", "}"]
   },
   "BeforeUpsert": {
     "prefix": ["ns_sequelize_deco_before_upsert", "@BeforeUpsert"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeUpsert", "public static $1() {", "\t$0", "}"]
   },
   "BeforeValidate": {
     "prefix": ["ns_sequelize_deco_before_validate", "@BeforeValidate"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["@BeforeValidate", "public static $1() {", "\t$0", "}"]
   }
 }

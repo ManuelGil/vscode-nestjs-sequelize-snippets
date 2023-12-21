@@ -1,7 +1,7 @@
 {
   "ForeignKey": {
     "prefix": ["ns_sequelize_deco_foreign_key", "@ForeignKey"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "@ForeignKey(() => ${1:Model})"
   }
 }

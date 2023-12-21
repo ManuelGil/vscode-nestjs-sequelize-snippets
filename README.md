@@ -1,9 +1,9 @@
-# NestJS SequelizeORM Snippets for VSCode Editor
+# NestJS Sequelize Snippets for VSCode Editor
 
 [![Latest Release](https://img.shields.io/visual-studio-marketplace/v/imgildev.vscode-nestjs-sequelize-snippets?style=flat&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-sequelize-snippets)
 [![GitHub license](https://img.shields.io/github/license/ManuelGil/vscode-nestjs-sequelize-snippets)]()
 
-Snippets for NestJS Framework and Sequelize ORM. This extension for Visual Studio Code adds snippets for NestJS Framework and Sequelize ORM.
+This extension adds code snippets for Sequelize ORM for JavaScript and TypeScript in VS Code editor.
 
 ## Requirements
 
@@ -79,4 +79,4 @@ See also the list of [contributors](https://github.com/ManuelGil/vscode-nestjs-s
 
 ## License
 
-NestJS SequelizeORM Snippets for VSCode is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
+NestJS Sequelize Snippets for VSCode is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.

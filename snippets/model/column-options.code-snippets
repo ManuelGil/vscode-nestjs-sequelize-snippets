@@ -1,22 +1,22 @@
 {
   "AllowNull": {
     "prefix": ["ns_sequelize_deco_allow_null", "@AllowNull"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "@AllowNull($0)"
   },
   "Unique": {
     "prefix": ["ns_sequelize_deco_unique", "@Unique"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "@Unique($0)"
   },
   "Default": {
     "prefix": ["ns_sequelize_deco_default", "@Default"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "@Default($0)"
   },
   "Comment": {
     "prefix": ["ns_sequelize_deco_comment", "@Comment"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "@Comment($0)"
   }
 }
