@@ -1,5 +1,5 @@
 {
-  "Index": {
+  "Sequelize Index": {
     "prefix": ["ns_sequelize_deco_index", "@Index"],
     "scope": "typescript",
     "body": "@Index($0)"

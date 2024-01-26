@@ -1,45 +1,45 @@
 {
-  "BeforeBulkCreate": {
+  "Sequelize BeforeBulkCreate": {
     "prefix": ["ns_sequelize_deco_before_bulk_create", "@BeforeBulkCreate"],
     "scope": "typescript",
     "body": ["@BeforeBulkCreate", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeBulkDestroy": {
+  "Sequelize BeforeBulkDestroy": {
     "prefix": ["ns_sequelize_deco_before_bulk_destroy", "@BeforeBulkDestroy"],
     "scope": "typescript",
     "body": ["@BeforeBulkDestroy", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeBulkUpdate": {
+  "Sequelize BeforeBulkUpdate": {
     "prefix": ["ns_sequelize_deco_before_bulk_update", "@BeforeBulkUpdate"],
     "scope": "typescript",
     "body": ["@BeforeBulkUpdate", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeCreate": {
+  "Sequelize BeforeCreate": {
     "prefix": ["ns_sequelize_deco_before_create", "@BeforeCreate"],
     "scope": "typescript",
     "body": ["@BeforeCreate", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeDestroy": {
+  "Sequelize BeforeDestroy": {
     "prefix": ["ns_sequelize_deco_before_destroy", "@BeforeDestroy"],
     "scope": "typescript",
     "body": ["@BeforeDestroy", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeSave": {
+  "Sequelize BeforeSave": {
     "prefix": ["ns_sequelize_deco_before_save", "@BeforeSave"],
     "scope": "typescript",
     "body": ["@BeforeSave", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeUpdate": {
+  "Sequelize BeforeUpdate": {
     "prefix": ["ns_sequelize_deco_before_update", "@BeforeUpdate"],
     "scope": "typescript",
     "body": ["@BeforeUpdate", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeUpsert": {
+  "Sequelize BeforeUpsert": {
     "prefix": ["ns_sequelize_deco_before_upsert", "@BeforeUpsert"],
     "scope": "typescript",
     "body": ["@BeforeUpsert", "public static $1() {", "\t$0", "}"]
   },
-  "BeforeValidate": {
+  "Sequelize BeforeValidate": {
     "prefix": ["ns_sequelize_deco_before_validate", "@BeforeValidate"],
     "scope": "typescript",
     "body": ["@BeforeValidate", "public static $1() {", "\t$0", "}"]

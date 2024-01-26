@@ -1,10 +1,10 @@
 {
-  "HasMany": {
+  "Sequelize HasMany": {
     "prefix": ["ns_sequelize_deco_has_many", "@HasMany"],
     "scope": "typescript",
     "body": "@HasMany(() => ${1:Model})"
   },
-  "HasOne": {
+  "Sequelize HasOne": {
     "prefix": ["ns_sequelize_deco_has_one", "@HasOne"],
     "scope": "typescript",
     "body": "@HasOne(() => ${1:Model})"

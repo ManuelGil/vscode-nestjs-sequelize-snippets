@@ -1,5 +1,5 @@
 {
-  "Table": {
+  "Sequelize Table": {
     "prefix": ["ns_sequelize_deco_table", "@Table"],
     "scope": "typescript",
     "body": ["import { Table, Column, Model } from 'sequelize-typescript';", "", "@Table()", "export class $1 extends Model {", "  $0", "}", ""]

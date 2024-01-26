@@ -2,7 +2,7 @@
   "name": "vscode-nestjs-sequelize-snippets",
   "displayName": "NestJS Sequelize Snippets for VSCode Editor",
   "description": "This extension adds code snippets for Sequelize ORM for JavaScript and TypeScript in VS Code editor.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",

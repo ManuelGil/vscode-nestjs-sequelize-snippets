@@ -1,20 +1,20 @@
 {
-  "AllowNull": {
+  "Sequelize AllowNull": {
     "prefix": ["ns_sequelize_deco_allow_null", "@AllowNull"],
     "scope": "typescript",
     "body": "@AllowNull($0)"
   },
-  "Unique": {
+  "Sequelize Unique": {
     "prefix": ["ns_sequelize_deco_unique", "@Unique"],
     "scope": "typescript",
     "body": "@Unique($0)"
   },
-  "Default": {
+  "Sequelize Default": {
     "prefix": ["ns_sequelize_deco_default", "@Default"],
     "scope": "typescript",
     "body": "@Default($0)"
   },
-  "Comment": {
+  "Sequelize Comment": {
     "prefix": ["ns_sequelize_deco_comment", "@Comment"],
     "scope": "typescript",
     "body": "@Comment($0)"

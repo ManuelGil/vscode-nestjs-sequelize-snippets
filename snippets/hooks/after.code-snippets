@@ -1,45 +1,45 @@
 {
-  "AfterBulkCreate": {
+  "Sequelize AfterBulkCreate": {
     "prefix": ["ns_sequelize_deco_after_bulk_create", "@AfterBulkCreate"],
     "scope": "typescript",
     "body": ["@AfterBulkCreate", "public static $1() {", "\t$0", "}"]
   },
-  "AfterBulkDestroy": {
+  "Sequelize AfterBulkDestroy": {
     "prefix": ["ns_sequelize_deco_after_bulk_destroy", "@AfterBulkDestroy"],
     "scope": "typescript",
     "body": ["@AfterBulkDestroy", "public static $1() {", "\t$0", "}"]
   },
-  "AfterBulkUpdate": {
+  "Sequelize AfterBulkUpdate": {
     "prefix": ["ns_sequelize_deco_after_bulk_update", "@AfterBulkUpdate"],
     "scope": "typescript",
     "body": ["@AfterBulkUpdate", "public static $1() {", "\t$0", "}"]
   },
-  "AfterCreate": {
+  "Sequelize AfterCreate": {
     "prefix": ["ns_sequelize_deco_after_create", "@AfterCreate"],
     "scope": "typescript",
     "body": ["@AfterCreate", "public static $1() {", "\t$0", "}"]
   },
-  "AfterDestroy": {
+  "Sequelize AfterDestroy": {
     "prefix": ["ns_sequelize_deco_after_destroy", "@AfterDestroy"],
     "scope": "typescript",
     "body": ["@AfterDestroy", "public static $1() {", "\t$0", "}"]
   },
-  "AfterSave": {
+  "Sequelize AfterSave": {
     "prefix": ["ns_sequelize_deco_after_save", "@AfterSave"],
     "scope": "typescript",
     "body": ["@AfterSave", "public static $1() {", "\t$0", "}"]
   },
-  "AfterUpdate": {
+  "Sequelize AfterUpdate": {
     "prefix": ["ns_sequelize_deco_after_update", "@AfterUpdate"],
     "scope": "typescript",
     "body": ["@AfterUpdate", "public static $1() {", "\t$0", "}"]
   },
-  "AfterUpsert": {
+  "Sequelize AfterUpsert": {
     "prefix": ["ns_sequelize_deco_after_upsert", "@AfterUpsert"],
     "scope": "typescript",
     "body": ["@AfterUpsert", "public static $1() {", "\t$0", "}"]
   },
-  "AfterValidate": {
+  "Sequelize AfterValidate": {
     "prefix": ["ns_sequelize_deco_after_validate", "@AfterValidate"],
     "scope": "typescript",
     "body": ["@AfterValidate", "public static $1() {", "\t$0", "}"]

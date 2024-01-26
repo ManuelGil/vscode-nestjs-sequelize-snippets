@@ -1,5 +1,5 @@
 {
-  "Column": {
+  "Sequelize Column": {
     "prefix": ["ns_sequelize_deco_column", "@Column"],
     "scope": "typescript",
     "body": ["@Column({", "  type: ${1:DataTypes.${2:STRING}},", "  allowNull: ${3:true},", "  defaultValue: ${4:null},", "  unique: ${5:false},", "  primaryKey: ${6:false},", "  comment: ${7:null}", "})"]

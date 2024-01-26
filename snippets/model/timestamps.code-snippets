@@ -1,15 +1,15 @@
 {
-  "CreatedAt": {
+  "Sequelize CreatedAt": {
     "prefix": ["ns_sequelize_deco_created_at", "@CreatedAt"],
     "scope": "typescript",
     "body": "@CreatedAt public createdAt: Date;"
   },
-  "UpdatedAt": {
+  "Sequelize UpdatedAt": {
     "prefix": ["ns_sequelize_deco_updated_at", "@UpdatedAt"],
     "scope": "typescript",
     "body": "@UpdatedAt public updatedAt: Date;"
   },
-  "DeletedAt": {
+  "Sequelize DeletedAt": {
     "prefix": ["ns_sequelize_deco_deleted_at", "@DeletedAt"],
     "scope": "typescript",
     "body": "@DeletedAt public deletedAt: Date;"

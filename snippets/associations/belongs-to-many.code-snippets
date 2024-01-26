@@ -1,5 +1,5 @@
 {
-  "BelongsToMany": {
+  "Sequelize BelongsToMany": {
     "prefix": ["ns_sequelize_belongs_to_many", "@BelongsToMany"],
     "scope": "typescript",
     "body": "@BelongsToMany(() => ${1:Model}, (() => $0))"
