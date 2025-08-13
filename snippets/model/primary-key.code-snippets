@@ -2,11 +2,24 @@
   "Sequelize AutoIncrement": {
     "prefix": ["ns_sequelize_deco_auto_increment", "@AutoIncrement"],
     "scope": "typescript",
+    "description": "Adds the @AutoIncrement decorator.",
     "body": "@AutoIncrement"
   },
   "Sequelize PrimaryKey": {
     "prefix": ["ns_sequelize_deco_primary_key", "@PrimaryKey"],
     "scope": "typescript",
+    "description": "Adds the @PrimaryKey decorator.",
     "body": "@PrimaryKey"
+  },
+  "Sequelize PrimaryKey AutoIncrement Column": {
+    "prefix": ["ns_sequelize_deco_primary_key_auto_column", "@PrimaryKeyAuto"],
+    "scope": "typescript",
+    "description": "Adds a typical autoincrement integer primary key column.",
+    "body": [
+      "@PrimaryKey",
+      "@AutoIncrement",
+      "@Column(DataType.INTEGER)",
+      "declare ${1:id}: number;"
+    ]
   }
 }

@@ -2,46 +2,55 @@
   "Sequelize BeforeBulkCreate": {
     "prefix": ["ns_sequelize_deco_before_bulk_create", "@BeforeBulkCreate"],
     "scope": "typescript",
+    "description": "Adds a @BeforeBulkCreate static hook method stub.",
     "body": ["@BeforeBulkCreate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeBulkDestroy": {
     "prefix": ["ns_sequelize_deco_before_bulk_destroy", "@BeforeBulkDestroy"],
     "scope": "typescript",
+    "description": "Adds a @BeforeBulkDestroy static hook method stub.",
     "body": ["@BeforeBulkDestroy", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeBulkUpdate": {
     "prefix": ["ns_sequelize_deco_before_bulk_update", "@BeforeBulkUpdate"],
     "scope": "typescript",
+    "description": "Adds a @BeforeBulkUpdate static hook method stub.",
     "body": ["@BeforeBulkUpdate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeCreate": {
     "prefix": ["ns_sequelize_deco_before_create", "@BeforeCreate"],
     "scope": "typescript",
+    "description": "Adds a @BeforeCreate static hook method stub.",
     "body": ["@BeforeCreate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeDestroy": {
     "prefix": ["ns_sequelize_deco_before_destroy", "@BeforeDestroy"],
     "scope": "typescript",
+    "description": "Adds a @BeforeDestroy static hook method stub.",
     "body": ["@BeforeDestroy", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeSave": {
     "prefix": ["ns_sequelize_deco_before_save", "@BeforeSave"],
     "scope": "typescript",
+    "description": "Adds a @BeforeSave static hook method stub.",
     "body": ["@BeforeSave", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeUpdate": {
     "prefix": ["ns_sequelize_deco_before_update", "@BeforeUpdate"],
     "scope": "typescript",
+    "description": "Adds a @BeforeUpdate static hook method stub.",
     "body": ["@BeforeUpdate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeUpsert": {
     "prefix": ["ns_sequelize_deco_before_upsert", "@BeforeUpsert"],
     "scope": "typescript",
+    "description": "Adds a @BeforeUpsert static hook method stub.",
     "body": ["@BeforeUpsert", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize BeforeValidate": {
     "prefix": ["ns_sequelize_deco_before_validate", "@BeforeValidate"],
     "scope": "typescript",
+    "description": "Adds a @BeforeValidate static hook method stub.",
     "body": ["@BeforeValidate", "public static $1() {", "\t$0", "}"]
   }
 }

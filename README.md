@@ -1,4 +1,4 @@
-# NestJS Sequelize Snippets for VSCode Editor
+# NestJS Sequelize Snippets
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/imgildev.vscode-nestjs-sequelize-snippets?style=for-the-badge&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-sequelize-snippets)
 [![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/imgildev.vscode-nestjs-sequelize-snippets?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-sequelize-snippets)
@@ -7,85 +7,126 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/ManuelGil/vscode-nestjs-sequelize-snippets?style=for-the-badge&logo=github)](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets)
 [![GitHub license](https://img.shields.io/github/license/ManuelGil/vscode-nestjs-sequelize-snippets?style=for-the-badge&logo=github)](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets/blob/main/LICENSE)
 
-This extension adds code snippets for Sequelize ORM for JavaScript and TypeScript in VS Code editor.
+> Handy snippets for `sequelize-typescript` and NestJS — models, decorators, associations, hooks and boilerplate to speed up development.
+
+## Overview
+
+This Visual Studio Code extension provides concise, typed snippets for `sequelize-typescript` used within NestJS projects. Use the snippets to quickly scaffold models, columns, associations, indexes, lifecycle hooks, and provider code — keeping your code consistent and saving repetitive typing.
 
 ## Requirements
 
-- VSCode 1.46.0 or later
+- Visual Studio Code 1.46.0 or later
+
+## Installation
+
+1. Open Visual Studio Code.
+2. Open the **Extensions** view (`Ctrl+Shift+X` / `⌘+Shift+X`).
+3. Search for **NestJS Sequelize Snippets** or install directly from the [Marketplace page](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-sequelize-snippets).
+4. Click **Install** and reload the editor if prompted.
 
 ## Usage
 
-### Snippets
+Type part of a snippet name and press `Tab` or `Enter` to expand it.
 
-![demo](https://raw.githubusercontent.com/ManuelGil/vscode-nestjs-sequelize-snippets/main/docs/images/demo.gif)
+### Common snippets
 
-Type part of snippet, press `Tab` or `Enter`, and the snippet unfolds. Below is a list of the most important shortcuts.
+| Snippet                                     | Purpose                                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `ns_sequelize_deco_created_at`              | `@CreatedAt public declare createdAt: Date;`                                         |
+| `ns_sequelize_deco_updated_at`              | `@UpdatedAt public declare updatedAt: Date;`                                         |
+| `ns_sequelize_deco_deleted_at`              | `@DeletedAt public declare deletedAt: Date;`                                         |
+| `ns_sequelize_deco_table`                   | `@Table({ tableName, timestamps, paranoid }) export class ... extends Model { ... }` |
+| `ns_sequelize_deco_auto_increment`          | `@AutoIncrement`                                                                     |
+| `ns_sequelize_deco_primary_key`             | `@PrimaryKey`                                                                        |
+| `ns_sequelize_deco_primary_key_auto_column` | `@PrimaryKey @AutoIncrement @Column(DataType.INTEGER) declare id: number;`           |
+| `ns_sequelize_deco_index`                   | `@Index({ name, unique, using })`                                                    |
+| `ns_sequelize_deco_column`                  | `@Column({ type: DataType.STRING, ... })`                                            |
+| `ns_sequelize_deco_allow_null`              | `@AllowNull()`                                                                       |
+| `ns_sequelize_deco_unique`                  | `@Unique()`                                                                          |
+| `ns_sequelize_deco_default`                 | `@Default()`                                                                         |
+| `ns_sequelize_deco_comment`                 | `@Comment()`                                                                         |
+| `ns_sequelize_deco_before_create`           | `@BeforeCreate public static ...() { ... }`                                          |
+| `ns_sequelize_deco_before_update`           | `@BeforeUpdate public static ...() { ... }`                                          |
+| `ns_sequelize_deco_after_create`            | `@AfterCreate public static ...() { ... }`                                           |
+| `ns_sequelize_deco_after_update`            | `@AfterUpdate public static ...() { ... }`                                           |
+| `ns_sequelize_deco_has_many`                | `@HasMany(() => Model)`                                                              |
+| `ns_sequelize_deco_has_one`                 | `@HasOne(() => Model)`                                                               |
+| `ns_sequelize_deco_foreign_key`             | `@ForeignKey(() => Model)`                                                           |
+| `ns_sequelize_belongs_to`                   | `@BelongsTo(() => Model)`                                                            |
+| `ns_sequelize_belongs_to_many`              | `@BelongsToMany(() => Model, () => ThroughModel)`                                    |
 
-| Snippet | Purpose |
-| --- | --- |
-| ns_sequelize_deco_created_at | @CreatedAt public createdAt: Date; |
-| ns_sequelize_deco_updated_at | @UpdatedAt public updatedAt: Date; |
-| ns_sequelize_deco_deleted_at | @DeletedAt public deletedAt: Date; |
-| ns_sequelize_deco_table | @Table() export class ... extends Model { ... } |
-| ns_sequelize_deco_auto_increment | @AutoIncrement |
-| ns_sequelize_deco_primary_key | @PrimaryKey |
-| ns_sequelize_deco_index | @Index() |
-| ns_sequelize_deco_column | @Column({ ... }) |
-| ns_sequelize_deco_allow_null | @AllowNull() |
-| ns_sequelize_deco_unique | @Unique() |
-| ns_sequelize_deco_default | @Default() |
-| ns_sequelize_deco_comment | @Comment() |
-| ns_sequelize_deco_before_bulk_create | @BeforeBulkCreate public static ...() { ... } |
-| ns_sequelize_deco_before_bulk_destroy | @BeforeBulkDestroy public static ...() { ... } |
-| ns_sequelize_deco_before_bulk_update | @BeforeBulkUpdate public static ...() { ... } |
-| ns_sequelize_deco_before_create | @BeforeCreate public static ...() { ... } |
-| ns_sequelize_deco_before_destroy | @BeforeDestroy public static ...() { ... } |
-| ns_sequelize_deco_before_save | @BeforeSave public static ...() { ... } |
-| ns_sequelize_deco_before_update | @BeforeUpdate public static ...() { ... } |
-| ns_sequelize_deco_before_upsert | @BeforeUpsert public static ...() { ... } |
-| ns_sequelize_deco_before_validate | @BeforeValidate public static ...() { ... } |
-| ns_sequelize_deco_after_bulk_create  | @AfterBulkCreate public static ...() { ... } |
-| ns_sequelize_deco_after_bulk_destroy | @AfterBulkDestroy public static ...() { ... } |
-| ns_sequelize_deco_after_bulk_update  | @AfterBulkUpdate public static ...() { ... } |
-| ns_sequelize_deco_after_create | @AfterCreate public static ...() { ... } |
-| ns_sequelize_deco_after_destroy  | @AfterDestroy public static ...() { ... } |
-| ns_sequelize_deco_after_save | @AfterSave public static ...() { ... } |
-| ns_sequelize_deco_after_update | @AfterUpdate public static ...() { ... } |
-| ns_sequelize_deco_after_upsert | @AfterUpsert public static ...() { ... } |
-| ns_sequelize_deco_after_validate | @AfterValidate public static ...() { ... } |
-| ns_sequelize_deco_has_many | @HasMany(() => model) |
-| ns_sequelize_deco_has_one | @HasOne(() => model) |
-| ns_sequelize_deco_foreign_key | @ForeignKey(() => model) |
-| ns_sequelize_belongs_to | @BelongsTo(() => model) |
-| ns_sequelize_belongs_to_many | @BelongsToMany(() => model, (() => model)) |
+## Contributing
 
-## Connect with me
+Contributions to the NestJS Sequelize Snippets are welcome and appreciated. To contribute:
 
-[![GitHub followers](https://img.shields.io/github/followers/ManuelGil?style=for-the-badge&logo=github)](https://github.com/ManuelGil)
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/imgildev?style=for-the-badge&logo=x)](https://twitter.com/imgildev)
+1. Fork the [GitHub repository](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets).
+2. Create a new branch for your feature or fix:
 
-## Other Extensions
+   ```bash
+   git checkout -b feature/your-feature
+   ```
 
-- [NestJS File Generator for VSCode](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-generator)
-- [NestJS Snippets for VSCode Editor](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension)
-- [Angular File Generator for VSCode Editor](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-angular-generator)
-- [React / NextJS / T3 Stack File Generator](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nextjs-generator)
-- [Nx / Angular / Nest / Next Essential Extension Pack](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nx-pack)
-- [CodeIgniter 4 Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-shield-snippets)
-- [CodeIgniter 4 Spark for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-shield-spark)
-- [Moodle Pack](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-moodle-snippets)
-- [Mustache Template Engine - Snippets & Autocomplete](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-mustache-snippets)
+3. Make your changes, commit them, and push to your fork.
+4. Submit a Pull Request targeting the `main` branch.
+
+Before contributing, please review the [Contribution Guidelines](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets/blob/main/CONTRIBUTING.md) for coding standards, testing, and commit message conventions. If you encounter a bug or wish to request a new feature, please open an Issue.
 
 ## Changelog
 
-See [CHANGELOG.md](./CHANGELOG.md)
+For a complete list of changes, see the [CHANGELOG.md](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets/blob/main/CHANGELOG.md).
 
 ## Authors
 
-- **Manuel Gil** - _Owner_ - [ManuelGil](https://github.com/ManuelGil)
+- **Manuel Gil** - _Owner_ - [@ManuelGil](https://github.com/ManuelGil)
 
-See also the list of [contributors](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets/contributors) who participated in this project.
+For a complete list of contributors, please refer to the [contributors](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets/contributors) page.
+
+## Follow Me
+
+- **GitHub**: [![GitHub followers](https://img.shields.io/github/followers/ManuelGil?style=for-the-badge\&logo=github)](https://github.com/ManuelGil)
+- **X (formerly Twitter)**: [![X Follow](https://img.shields.io/twitter/follow/imgildev?style=for-the-badge\&logo=x)](https://twitter.com/imgildev)
+
+## Other Extensions
+
+- **[Auto Barrel](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-auto-barrel)**
+  Automatically generates and maintains barrel (`index.ts`) files for your TypeScript projects.
+
+- **[Angular File Generator](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-angular-generator)**
+  Generates boilerplate and navigates your Angular (9→20+) project from within the editor, with commands for components, services, directives, modules, pipes, guards, reactive snippets, and JSON2TS transformations.
+
+- **[NestJS File Generator](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-generator)**
+  Simplifies creation of controllers, services, modules, and more for NestJS projects, with custom commands and Swagger snippets.
+
+- **[NestJS Snippets](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension)**
+  Ready-to-use code patterns for creating controllers, services, modules, DTOs, filters, interceptors, and more in NestJS.
+
+- **[T3 Stack / NextJS / ReactJS File Generator](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nextjs-generator)**
+  Automates file creation (components, pages, hooks, API routes, etc.) in T3 Stack (Next.js, React) projects and can start your dev server from VSCode.
+
+- **[Drizzle ORM Snippets](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-drizzle-snippets)**
+  Collection of code snippets to speed up Drizzle ORM usage, defines schemas, migrations, and common database operations in TypeScript/JavaScript.
+
+- **[CodeIgniter 4 Spark](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-spark)**
+  Scaffolds controllers, models, migrations, libraries, and CLI commands in CodeIgniter 4 projects using Spark, directly from the editor.
+
+- **[CodeIgniter 4 Snippets](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)**
+  Snippets for accelerating development with CodeIgniter 4, including controllers, models, validations, and more.
+
+- **[CodeIgniter 4 Shield Snippets](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-shield-snippets)**
+  Snippets tailored to CodeIgniter 4 Shield for faster authentication and security-related code.
+
+- **[Mustache Template Engine - Snippets & Autocomplete](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-mustache-snippets)**
+  Snippets and autocomplete support for Mustache templates, making HTML templating faster and more reliable.
+
+## Recommended Browser Extension
+
+For developers who work with `.vsix` files for offline installations or distribution, the complementary [**One-Click VSIX**](https://chromewebstore.google.com/detail/imojppdbcecfpeafjagncfplelddhigc?utm_source=item-share-cb) extension is recommended, available for both Chrome and Firefox.
+
+> **One-Click VSIX** integrates a direct "Download Extension" button into each VSCode Marketplace page, ensuring the file is saved with the `.vsix` extension, even if the server provides a `.zip` archive. This simplifies the process of installing or sharing extensions offline by eliminating the need for manual file renaming.
+
+- [Get One-Click VSIX for Chrome &rarr;](https://chromewebstore.google.com/detail/imojppdbcecfpeafjagncfplelddhigc?utm_source=item-share-cb)
+- [Get One-Click VSIX for Firefox &rarr;](https://addons.mozilla.org/es-ES/firefox/addon/one-click-vsix/)
 
 ## License
 
-NestJS Sequelize Snippets for VSCode is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
+This project is licensed under the **MIT License**. See the [LICENSE](https://github.com/ManuelGil/vscode-nestjs-sequelize-snippets/blob/main/LICENSE) file for full details.

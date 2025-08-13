@@ -2,6 +2,15 @@
   "Sequelize Table": {
     "prefix": ["ns_sequelize_deco_table", "@Table"],
     "scope": "typescript",
-    "body": ["import { Table, Column, Model } from 'sequelize-typescript';", "", "@Table()", "export class $1 extends Model {", "  $0", "}", ""]
+    "description": "Creates a basic Model class with @Table decorator and common options.",
+    "body": [
+      "import { Table, Column, Model, DataType } from 'sequelize-typescript';",
+      "",
+      "@Table({ tableName: '${2:table_name}', timestamps: ${3:true}, paranoid: ${4:false} })",
+      "export class $1 extends Model {",
+      "  $0",
+      "}",
+      ""
+    ]
   }
 }

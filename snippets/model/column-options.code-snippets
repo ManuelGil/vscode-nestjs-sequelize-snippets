@@ -2,21 +2,25 @@
   "Sequelize AllowNull": {
     "prefix": ["ns_sequelize_deco_allow_null", "@AllowNull"],
     "scope": "typescript",
+    "description": "Adds an @AllowNull decorator with a placeholder for value/options.",
     "body": "@AllowNull($0)"
   },
   "Sequelize Unique": {
     "prefix": ["ns_sequelize_deco_unique", "@Unique"],
     "scope": "typescript",
+    "description": "Adds an @Unique decorator with a placeholder for name/options.",
     "body": "@Unique($0)"
   },
   "Sequelize Default": {
     "prefix": ["ns_sequelize_deco_default", "@Default"],
     "scope": "typescript",
+    "description": "Adds a @Default decorator with a placeholder for value.",
     "body": "@Default($0)"
   },
   "Sequelize Comment": {
     "prefix": ["ns_sequelize_deco_comment", "@Comment"],
     "scope": "typescript",
+    "description": "Adds a @Comment decorator with a placeholder for text.",
     "body": "@Comment($0)"
   }
 }

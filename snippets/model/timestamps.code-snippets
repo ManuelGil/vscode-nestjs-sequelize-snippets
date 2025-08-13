@@ -2,16 +2,19 @@
   "Sequelize CreatedAt": {
     "prefix": ["ns_sequelize_deco_created_at", "@CreatedAt"],
     "scope": "typescript",
-    "body": "@CreatedAt public createdAt: Date;"
+    "description": "Adds a @CreatedAt timestamp property (strict-safe with declare).",
+    "body": "@CreatedAt public declare createdAt: Date;"
   },
   "Sequelize UpdatedAt": {
     "prefix": ["ns_sequelize_deco_updated_at", "@UpdatedAt"],
     "scope": "typescript",
-    "body": "@UpdatedAt public updatedAt: Date;"
+    "description": "Adds a @UpdatedAt timestamp property (strict-safe with declare).",
+    "body": "@UpdatedAt public declare updatedAt: Date;"
   },
   "Sequelize DeletedAt": {
     "prefix": ["ns_sequelize_deco_deleted_at", "@DeletedAt"],
     "scope": "typescript",
-    "body": "@DeletedAt public deletedAt: Date;"
+    "description": "Adds a @DeletedAt timestamp property (strict-safe with declare).",
+    "body": "@DeletedAt public declare deletedAt: Date;"
   }
 }

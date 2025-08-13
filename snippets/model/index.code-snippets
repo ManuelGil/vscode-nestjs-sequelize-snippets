@@ -2,6 +2,7 @@
   "Sequelize Index": {
     "prefix": ["ns_sequelize_deco_index", "@Index"],
     "scope": "typescript",
-    "body": "@Index($0)"
+    "description": "Adds an @Index decorator with common options (name, unique, using).",
+    "body": "@Index({ name: '${1:idx_name}', unique: ${2:false}, using: '${3:BTREE}' })"
   }
 }

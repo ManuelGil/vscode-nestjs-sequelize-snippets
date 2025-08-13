@@ -2,46 +2,55 @@
   "Sequelize AfterBulkCreate": {
     "prefix": ["ns_sequelize_deco_after_bulk_create", "@AfterBulkCreate"],
     "scope": "typescript",
+    "description": "Adds an @AfterBulkCreate static hook method stub.",
     "body": ["@AfterBulkCreate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterBulkDestroy": {
     "prefix": ["ns_sequelize_deco_after_bulk_destroy", "@AfterBulkDestroy"],
     "scope": "typescript",
+    "description": "Adds an @AfterBulkDestroy static hook method stub.",
     "body": ["@AfterBulkDestroy", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterBulkUpdate": {
     "prefix": ["ns_sequelize_deco_after_bulk_update", "@AfterBulkUpdate"],
     "scope": "typescript",
+    "description": "Adds an @AfterBulkUpdate static hook method stub.",
     "body": ["@AfterBulkUpdate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterCreate": {
     "prefix": ["ns_sequelize_deco_after_create", "@AfterCreate"],
     "scope": "typescript",
+    "description": "Adds an @AfterCreate static hook method stub.",
     "body": ["@AfterCreate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterDestroy": {
     "prefix": ["ns_sequelize_deco_after_destroy", "@AfterDestroy"],
     "scope": "typescript",
+    "description": "Adds an @AfterDestroy static hook method stub.",
     "body": ["@AfterDestroy", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterSave": {
     "prefix": ["ns_sequelize_deco_after_save", "@AfterSave"],
     "scope": "typescript",
+    "description": "Adds an @AfterSave static hook method stub.",
     "body": ["@AfterSave", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterUpdate": {
     "prefix": ["ns_sequelize_deco_after_update", "@AfterUpdate"],
     "scope": "typescript",
+    "description": "Adds an @AfterUpdate static hook method stub.",
     "body": ["@AfterUpdate", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterUpsert": {
     "prefix": ["ns_sequelize_deco_after_upsert", "@AfterUpsert"],
     "scope": "typescript",
+    "description": "Adds an @AfterUpsert static hook method stub.",
     "body": ["@AfterUpsert", "public static $1() {", "\t$0", "}"]
   },
   "Sequelize AfterValidate": {
     "prefix": ["ns_sequelize_deco_after_validate", "@AfterValidate"],
     "scope": "typescript",
+    "description": "Adds an @AfterValidate static hook method stub.",
     "body": ["@AfterValidate", "public static $1() {", "\t$0", "}"]
   }
 }

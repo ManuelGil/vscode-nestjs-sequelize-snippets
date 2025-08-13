@@ -2,6 +2,7 @@
   "Sequelize BelongsTo": {
     "prefix": ["ns_sequelize_belongs_to", "@BelongsTo"],
     "scope": "typescript",
+    "description": "Adds a @BelongsTo association to the specified target model.",
     "body": "@BelongsTo(() => ${1:Model})"
   }
 }

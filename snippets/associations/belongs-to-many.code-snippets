@@ -2,6 +2,10 @@
   "Sequelize BelongsToMany": {
     "prefix": ["ns_sequelize_belongs_to_many", "@BelongsToMany"],
     "scope": "typescript",
-    "body": "@BelongsToMany(() => ${1:Model}, (() => $0))"
+    "description": "Adds a @BelongsToMany association with a through model and a typed property.",
+    "body": [
+      "@BelongsToMany(() => ${1:TargetModel}, () => ${2:ThroughModel})",
+      "declare ${3:targetModels}: ${1:TargetModel}[];"
+    ]
   }
 }

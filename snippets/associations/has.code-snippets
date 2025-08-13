@@ -2,11 +2,13 @@
   "Sequelize HasMany": {
     "prefix": ["ns_sequelize_deco_has_many", "@HasMany"],
     "scope": "typescript",
+    "description": "Adds a @HasMany association to the specified target model.",
     "body": "@HasMany(() => ${1:Model})"
   },
   "Sequelize HasOne": {
     "prefix": ["ns_sequelize_deco_has_one", "@HasOne"],
     "scope": "typescript",
+    "description": "Adds a @HasOne association to the specified target model.",
     "body": "@HasOne(() => ${1:Model})"
   }
 }
